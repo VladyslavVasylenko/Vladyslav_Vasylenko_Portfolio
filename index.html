@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vladyslav Vasylenko Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="wrapper">
+  <header class="wrapper _header">
+    <img src="1000000888.jpg" alt="Vladyslav Vasylenko" class="profile-photo" />
+    <h1>Vladyslav Vasylenko</h1>
+    <p>Frontend Developer | Former Legal Officer | Based in Czech Republic</p>
+  </header>
+
+  <nav class="wrapper _nav">
+    <button onclick="setLanguage('en')">English</button>
+    <button onclick="setLanguage('ru')">Русский</button>
+    <button onclick="setLanguage('ua')">Українська</button>
+    <button onclick="setLanguage('cz')">Čeština</button>
+  </nav>
+
+  <main class="wrapper _main">
+    <section class="bio">
+      <h2 data-lang="en">About Me</h2>
+      <h2 data-lang="ru" hidden>Обо мне</h2>
+      <h2 data-lang="ua" hidden>Про мене</h2>
+      <h2 data-lang="cz" hidden>O mně</h2>
+
+      <p data-lang="en">
+        I'm a frontend developer with a background in law and digital advertising. Currently working in the Czech Republic in manufacturing but actively seeking to return to the tech industry.
+      </p>
+      <p data-lang="ru" hidden>
+        Я фронтенд-разработчик с юридическим образованием и опытом работы в цифровой рекламе. Сейчас работаю в Чехии на производстве, но стремлюсь вернуться в IT.
+      </p>
+      <p data-lang="ua" hidden>
+        Я фронтенд-розробник із юридичною освітою та досвідом у цифровій рекламі. Працюю в Чехії, але шукаю можливість повернутись в ІТ.
+      </p>
+      <p data-lang="cz" hidden>
+        Jsem frontendový vývojář s právním vzděláním a zkušenostmi v digitální reklamě. Pracuji v České republice ve výrobě, ale hledám příležitost vrátit se do IT.
+      </p>
+    </section>
+
+    <section class="projects wrapper _projects">
+      <h2 data-lang="en">Projects</h2>
+      <h2 data-lang="ru" hidden>Проекты</h2>
+      <h2 data-lang="ua" hidden>Проєкти</h2>
+      <h2 data-lang="cz" hidden>Projekty</h2>
+      <ul>
+        <li><a href="https://vladyslavvasylenko.github.io/cryptocurrency_analytics/index.html">Cryptocurrency Analytics</a></li>
+        <li><a href="https://price-tracker-rosy.vercel.app/">Price Tracker</a></li>
+        <li><a href="https://vladyslavvasylenko.github.io/WeAreUkrainians/gallery.html">We Are Ukrainians</a></li>
+        <li><a href="https://vladyslavvasylenko.github.io/Lucky-Seed/squash.html">Lucky Seed Catalog</a></li>
+        <li><a href="https://vladyslavvasylenko.github.io/VillaKrim/">Villa Krim Article</a></li>
+      </ul>
+    </section>
+
+    <section class="contacts wrapper _contacts">
+      <h2 data-lang="en">Contact</h2>
+      <h2 data-lang="ru" hidden>Контакты</h2>
+      <h2 data-lang="ua" hidden>Контакти</h2>
+      <h2 data-lang="cz" hidden>Kontakt</h2>
+      <p>Email: your.email@example.com</p>
+      <p>GitHub: <a href="https://github.com/VladyslavVasylenko">VladyslavVasylenko</a></p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
