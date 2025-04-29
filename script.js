@@ -1,15 +1,19 @@
-document.addEventListener("DOMContentLoaded", () => {
-  const buttons = document.querySelectorAll(".lang-button");
-  const contentElements = document.querySelectorAll("main [data-lang]");
+const buttons = document.querySelectorAll(".lang-button");
+const elements = document.querySelectorAll("[data-lang]");
 
-  buttons.forEach((button) => {
-    button.addEventListener("click", () => {
-      const selectedLang = button.dataset.lang;
-
-      contentElements.forEach((el) => {
-        el.hidden = el.dataset.lang !== selectedLang;
-      });
-    });
+function setLanguage(lang) {
+  elements.forEach((el) => {
+    el.hidden = el.getAttribute("data-lang") !== lang;
   });
-});
+
+  buttons.forEach((btn) => {
+    btn.classList.remove("active");
+    if (btn.getAttribute("data-lang") === lang) {
+      btn.classList.add("active");
+    }
+  });
+}
+
+setLanguage("en");
+
 
