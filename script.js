@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function setLanguage(lang) {
     elements.forEach((el) => {
-      el.hidden = el.dataset.lang !== selectedLang;
+      el.hidden = el.getAttribute("data-lang") !== lang;
     });
 
     buttons.forEach((btn) => {
@@ -19,9 +19,8 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  // Стартовый язык
+  // Устанавливаем язык по умолчанию
   setLanguage("en");
 });
-
 
 
