@@ -18,6 +18,16 @@
   font-size: 2em;
 }
 
+.profile-photo{
+  max-height: 60vh; 
+  width: auto; 
+  display: block;
+  float: center;
+  margin-right: 5vh;
+  border-radius: 10%;
+  box-shadow:#1e1e1e 0 0 3px;
+}
+
 .nav {
   text-align: center;
   margin: 20px 0;
@@ -58,14 +68,4 @@ footer {
 footer a {
   color: #333;
   text-decoration: none;
-}
-
-.profile-photo{
-  max-height: 60vh; 
-  width: auto; 
-  display: block;
-  float: left;
-  margin-right: 5vh;
-  border-radius: 10%;
-  box-shadow:#1e1e1e 0 0 3px;
 }
