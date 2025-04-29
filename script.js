@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
   function setLanguage(lang) {
     elements.forEach((el) => {
       if (!el.classList.contains('lang-button')) {
-        el.hidden = el.getAttribute("data-lang") !== lang;
+        el.hidden = el.getAttribute("data-lang") === lang;
       }
     });
 
