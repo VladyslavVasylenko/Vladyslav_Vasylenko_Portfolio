@@ -4,10 +4,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function setLanguage(lang) {
     elements.forEach((el) => {
-    if (!el.classList.contains('lang-button')) {
-      el.hidden = el.getAttribute("data-lang") !== lang;
-    }
-  });
+      if (!el.classList.contains('lang-button')) {
+        el.hidden = el.getAttribute("data-lang") !== lang;
+      }
+    });
 
     buttons.forEach((btn) => {
       btn.classList.toggle("active", btn.getAttribute("data-lang") === lang);
@@ -24,5 +24,3 @@ document.addEventListener("DOMContentLoaded", () => {
   // Устанавливаем язык по умолчанию
   setLanguage("en");
 });
-
-
